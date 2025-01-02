@@ -64,7 +64,7 @@ contract SupplyChain {
     
     mapping (address => userData) public userInfo;
     
-    function registerUser(bytes32 name, string[] memory loc, uint role, address _userAddr) external onlyOwner {
+    function registerUser(bytes32 name, string[] calldata loc, uint role, address _userAddr) external onlyOwner {
         userInfo[_userAddr].name = name;
         userInfo[_userAddr].userLoc = loc;
         userInfo[_userAddr].role = roles(role);
@@ -178,9 +178,9 @@ contract SupplyChain {
     function manufacturerCreatesMedicine(
         address _manufacturerAddr,
         bytes32 _description,
-        address[] memory _rawAddr,
+        address[] calldata _rawAddr,
         uint _quantity,
-        address[] memory _transporterAddr,
+        address[] calldata _transporterAddr,
         address _recieverAddr,
         uint RcvrType
         ) external {

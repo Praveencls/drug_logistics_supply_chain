@@ -1,0 +1,251 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_creator",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "_txnHash",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "_prev",
+						"type": "bytes32"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_timestamp",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_latitude",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_longitude",
+						"type": "string"
+					}
+				],
+				"name": "txnCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "_txnHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "_from",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "_prev",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "_latitude",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_longitude",
+						"type": "string"
+					}
+				],
+				"name": "createTxnEntry",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllTransactions",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "bytes32",
+								"name": "txnHash",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "address",
+								"name": "fromAddr",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "toAddr",
+								"type": "address"
+							},
+							{
+								"internalType": "bytes32",
+								"name": "prevTxn",
+								"type": "bytes32"
+							},
+							{
+								"internalType": "string",
+								"name": "latitude",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "longitude",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Transactions.txns[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "transactions",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "txnHash",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "address",
+						"name": "fromAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "toAddr",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "prevTxn",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "latitude",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "longitude",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "txnCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Transactions.sol": "Transactions"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Transactions.sol": {
+			"keccak256": "0xd91927101982ec4fe080443d3d9003106cddcaa90a36b9dc27164a1cdfc8d49e",
+			"urls": [
+				"bzz-raw://c545b0869a421de84a2f36a5d517cacd4f66aea92e1af4b792042baf6ac6f407",
+				"dweb:/ipfs/QmTXWXqCyn6wvH67ZLiPgQ1yoijuEpDEAF1nwb9wqK1D96"
+			]
+		}
+	},
+	"version": 1
+}
