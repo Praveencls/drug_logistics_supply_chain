@@ -118,21 +118,21 @@ Step to deploy the contract:
 - After deploying the contract, you will see the deployed contract instance under the Deployed Contracts section.
 - Expand the deployed contract instance to see available functions (registerDrug, updateStatus, transferOwnership, etc.).
     - Register a New Drug
-        Expand the registerDrug function.
-        Enter Paracetamol for _name and Pharma Inc. for _manufacturer.
-        Click on the transact button.
-        This will create a new drug and emit a DrugRegistered event.
+        - Expand the registerDrug function.
+        - Enter Paracetamol for _name and Pharma Inc. for _manufacturer.
+        - Click on the transact button.
+        - This will create a new drug and emit a DrugRegistered event.
     - Update the Status of the Drug
-        Expand the updateStatus function.
-        Enter 1 for _id (the ID of the drug) and In Transit for _status.
-        Click on the transact button.
-        This will update the status of the drug and emit a StatusUpdated event.
+        - Expand the updateStatus function.
+        - Enter 1 for _id (the ID of the drug) and In Transit for _status.
+        - Click on the transact button.
+        - This will update the status of the drug and emit a StatusUpdated event.
     - Transfer Ownership of the Drug
-        Expand the transferOwnership function.
-        Enter 1 for _id and a new Ethereum address (use one of the accounts provided by the JavaScript VM) for _newOwner.
-        Click on the transact button.
-        This will transfer ownership of the drug and emit an OwnershipTransferred event.
+        - Expand the transferOwnership function.
+        - Enter 1 for _id and a new Ethereum address (use one of the accounts provided by the JavaScript VM) for _newOwner.
+        - Click on the transact button.
+        - This will transfer ownership of the drug and emit an OwnershipTransferred event.
     - Viewing Events and Logs
-        Each time you call a function, an entry is added to the Transactions section at the bottom of the Remix IDE.
+        - Each time you call a function, an entry is added to the Transactions section at the bottom of the Remix IDE.
     - You can click on these transactions to view details and see emitted events.
 By following these steps, you can easily test the DrugSupplyChain smart contract in the Remix IDE. The interactive environment of Remix makes it a great tool for learning and testing Solidity smart contracts.
